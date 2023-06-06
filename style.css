@@ -1,0 +1,225 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+
+/* GLOBAL */
+:root {
+    --bg-color: #00030C;
+    --main-font-color: #FFFFFF;
+    --secondary-font-color: #F6F6F6;
+    --warning-font-color: #C0C0C0;
+    --button-blue-color: #167BF7;
+    --button-blue-hover-bgcolor: #0d52a6;
+    --button-transp-bdrcolor: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+
+    font-family: 'inter', sans-serif;
+    color: var(--main-font-color);
+}
+
+/* MAIN */
+
+main {
+    background-image: url('./images/background.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+/* PRINCIPAL */
+
+.principal {
+    margin: 110px 0 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#comboplus-image {
+    width: 70%;
+
+    margin: 1em 0 2em 0;
+}
+
+#price-warning {
+    font-size: .75rem;
+    font-weight: 100;
+    color: var(--warning-font-color);
+}
+
+/* BUTTONS */
+
+.button {
+    width: 512px;
+
+    margin-bottom: 15px;
+    padding: 15px;
+    
+    font-size: 1rem;
+    color: var(--main-font-color);
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+
+    border-radius: 7px;
+
+    transition: 250ms;
+}
+
+.blue {
+    background-color: var(--button-blue-color);
+}
+
+.transparent {
+    background-color: transparent;
+    border: solid 1px var(--button-transp-bdrcolor);
+}
+
+.blue:hover {
+    background-color: var(--button-blue-hover-bgcolor);
+}
+
+.transparent:hover {
+    background-color: var(--button-transp-bdrcolor);
+
+    color: var(--bg-color);
+}
+
+/* DESCRIPTION */
+
+.description-container {
+    height: 100vh;
+    
+    margin: 0 10em;
+    
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.description-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--main-font-color);
+}
+
+.description-paragraph {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* PLATAFORMS */
+
+.plataforms-img {
+    width: 50%;
+
+    margin-right: 70px;
+}
+
+/* SCREENS */
+
+.screens-img {
+    width: 50%;
+
+    margin-left: 70px;
+}
+
+.screens-button {
+    width: 160px;
+}
+
+/* NOTEBOOK */
+
+.notebook-img {
+    width: 50%;
+
+    margin-right: 70px;
+}
+
+/* DEVICES */
+
+.devices {
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.devices-imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.device-description {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 145px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 5%;
+}
+
+.footer-info {
+    display: flex;
+    gap: 15px;
+}
+
+.info {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+.copyright {
+    padding: 0 20%;
+
+    text-align: center;
+}
+
+.copyright-paragraph {
+    margin-bottom: 30px;
+
+    font-size: .75rem;
+    font-weight: 100;
+    color: var(--warning-font-color);
+}
